@@ -5,10 +5,12 @@
 @import '_about.scss';
 @import '_loader.scss';
 @import '_contact.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 .row::after {
     content: "";
