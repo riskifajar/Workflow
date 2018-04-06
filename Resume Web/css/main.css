@@ -413,8 +413,8 @@
     height: 100%; }
     .loader .box-loader .box-loader-center {
       position: absolute;
-      top: 40%;
-      left: 45%;
+      left: calc(50% - 9vmin);
+      top: calc(50% - 9vmin);
       width: 200px;
       height: 200px; }
   .loader .spinner {
