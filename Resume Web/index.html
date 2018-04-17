@@ -20,31 +20,29 @@
             </div>
         </div>
     </div>
-    <header>
+    <header id="header">
         <img src="images/cover.jpg" alt="">
     </header>
-
-    <!-- <div id="page-wrapper">
-        <div id="title">Sidebar Interaction</div>
-    </div> -->
-
-
+    <!-- SIDEBAR -->
     <div id="btn">
         <div id='top'></div>
         <div id='middle'></div>
         <div id='bottom'></div>
     </div>
     <div id="box">
+        <div class="profil">
+            <a href="#header" class="profil-poto"><img src="images/cover.jpg" alt=""></a>
+        </div>
         <div id="items">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
-            <div class="item">Item 4</div>
-            <div class="item">Item 5</div>
+            <a href="#vcard">vcard</a>
+            <a href="#about">about</a>
+            <a href="#timeline">timeline</a>
+            <a href="#sklilbar">skillbar</a>
+            <a href="#contact">contact</a>
         </div>
     </div>
     <!-- VCARD -->
-    <section>
+    <section id="vcard">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -120,7 +118,7 @@
         </div>
     </section>
     <!-- ABOUT -->
-    <main>
+    <main  id="about">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -138,7 +136,7 @@
         </div>
     </main>
     <!-- TITLE -->
-    <main>
+    <main id="timeline">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -204,8 +202,8 @@
             </div>
         </div>
     </main>
-    <!-- TITLE -->
-    <main>
+    <!-- TITLE SKILLBAR -->
+    <main  id="skillbar" >
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -256,6 +254,17 @@
         </div>
     </main>
     <!-- CONTACT -->
+    <main  id="contact" >
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="title">
+                        <h1><i class="fa fa-code"></i></i>CONTACT</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <main>
         <div class="container">
             <div class="row">
@@ -300,5 +309,6 @@
         </div>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/scrolling.js"></script>
 </body>
 </html>

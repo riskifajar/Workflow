@@ -88,6 +88,11 @@ main {
     }
 }
 
+main,
+section:focus {
+    outline: none;
+}
+
 @keyframes zoomIn {
     from {
         opacity: 0;
