@@ -1,9 +1,14 @@
+// loader
+$(window).on('load', function () { 
+    $('.loader').delay(800).fadeOut('fast'); // will fade out the white DIV that covers the website. 
+    $('.loader').delay(800).css({
+        'overflow': 'visible'
+    });
+});
 //scroll
+$(window).on('load',function(){
 
-
-$(document).ready(function(){
-
-$(function () {
+$(function() {
 
     window.sr = ScrollReveal({reset: false});
 
@@ -40,7 +45,7 @@ $(function () {
 
     sr.reveal('.vcard', {
         origin: 'right',
-        duration: 2300,
+        duration: 2000,
     });
 
     sr.reveal('.about', {
@@ -66,7 +71,6 @@ $(function () {
         origin: 'right',
         duration: 3000,
     });
-
 })
 });
 
@@ -80,29 +84,11 @@ $(document).ready(function () {
     });
 });
 
-// loader
-$(window).on('load', function () { 
-    $('.loader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-    $('.loader').delay(1000).css({
-        'overflow': 'visible'
-    });
-});
-
 //SIDEBAR
-var sidebarBox = document.querySelector('#box'),
-    sidebarBtn = document.querySelector('#btn'),
-    pageWrapper = document.querySelector('#page-wrapper');
-
-sidebarBtn.addEventListener('click', function (event) {
-    sidebarBtn.classList.toggle('active');
-    sidebarBox.classList.toggle('active');
-});
-window.addEventListener('keydown', function (event) {
-
-    if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
-        sidebarBtn.classList.remove('active');
-        sidebarBox.classList.remove('active');
-    }
+$(document).ready(function(){
+    $('#btn').click(function(){
+        $('#btn, #box').toggleClass('active');
+    });
 });
 
 
